@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+    --section-gap: rgb(35, 35, 35);
+    --section-hover:rgb(61, 59, 59);
+    --theme-color:rgb(229, 9, 20);
+    --theme-hover-color:rgba(229, 9, 20, 0.725);
+}
+main .divider{
+    height: 1.3vh;
+    background: var(--section-gap);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+section:nth-child(1){
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1.0) 100%), url('../Images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position: center;
+}
+section .header{
+    margin-top: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1200px;
+}
+.header .header-image{
+    width: 100%;
+    max-width: 150px;
+}
+.header-image img{
+    width: 100%;
+    height: 100%;
+}
+.header .header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.header-content select{
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    margin-right: 1.0rem;
+    background: transparent;
+}
+.header select:focus{
+    outline: 2px solid #fff;
+}
+.header-content select option{
+    color: #000;
+    font-size: 1.2rem;
+}
+.header-content .header-btn{
+    background: var(--theme-color);
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    text-wrap: nowrap;
+}
+section .header-box{
+    width: 100%;
+    max-width: 1150px;
+    padding: 0rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 88vh;
+}
+section .header-home{
+    width: 100%;
+    text-align: center;
+}
+.header-home h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.header-home p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0rem;
+}
+.header-home h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+section .header-form{
+    display: flex;
+    flex-wrap: wrap;
+    width:100% ;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.header-form input{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 33%;
+    padding: 1.0rem  0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #fff;
+}
+.header-form input:focus{
+    outline: 2px solid #fff;
+}
+.header-form button{
+    margin-left: 0.5rem;
+    background: var(--theme-color);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    padding: 0 2rem;
+}
+
+.header-form button i{
+    margin-left: 0.7rem;
+}
+
+/* 2nd-Section */
+section{
+    background: rgba(0, 0, 0, 1.0);
+}
+section .second-box{
+    width: 100%;
+    max-width: 1200px;
+    padding: 72px 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.second-box .box1{
+    width: 100%;
+}
+.second-box .box1 h2,.third-box .box1 h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.second-box .box1 p,.third-box .box1 p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+.second-box .box2{
+    width: 100%;
+    margin: 2.25rem 0;
+    position: relative;
+    z-index: 10;
+}
+.box2 img{
+    width:100%;
+}
+.box2 video{
+    position: absolute;
+    z-index: -8;
+    left: 13.5%;
+    bottom: 26%;
+    width: 73%;
+}
+/* 3rd-Section */
+.third-box{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 72px 0.5rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.third-box .box1{
+    width: 50%;
+}
+.third-box .box2{
+    width: 50%;
+    position: relative;
+    z-index: 10;
+}
+.third-box .box2.frame{
+    width: 50%;
+}
+.third-box .box2.frame .download-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 12;
+    width: 60%;
+    top: 67%;
+    left: 20%;
+    padding: 0.5rem;
+    background: #000;
+}
+.download-icon div{
+    width: 50%;
+}
+.download-icon div p:nth-child(2){
+    color: #0071EB;
+}
+.download-icon img{
+    width: 20%;
+}
+
+/* 4th-Section */
+.box2.desktop video{
+    border: 1px solid #fff;
+    left: 18.0%;
+    top: 10%;
+    width: 62%;
+}
+/* 6th-Section */
+section .box-footer{
+    width: 100%;
+    max-width: 1200px;
+    padding: 72px 0.5rem;
+    display: grid;
+}
+.box-footer h2{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.box-footer button{
+    width: 100%;
+    padding: 24px;
+    background: var(--section-gap);
+    margin: 0.20rem 0;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    transition: all 0.25s ease-in-out 0s;
+    outline: none;
+}
+.box-footer button:focus{
+    outline: 2px solid #fff;
+}
+.box-footer button:hover{
+    background:var(--section-hover);
+}
+.box-footer button span{
+    font-size: 1.8rem;
+}
+.box-footer button span:nth-child(1){
+    text-align: left;
+}
+.box-footer form{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box-footer form h3{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.box-footer form input{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 350px;
+    padding: 1.0rem  0.5rem;
+    background: var(--section-gap);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #fff;
+}
+.box-footer form input:focus{
+    outline: 2px solid #fff;
+}
+.box-footer form button{
+    width: 100%;
+    max-width: 200px;
+    margin-left: 0.5rem;
+    background: var(--theme-color);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    padding: 1.0rem 2rem;
+}
+.box-footer form button i{
+    margin-left: 0.7rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 1.0);
+}
+footer .footer{
+    width:90%;
+    max-width: 1200px;
+    padding: 30px 0.5rem;
+}
+footer div,footer div a{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.footer ul li{
+    list-style-type: none;
+    margin: 0.5rem 0;
+}
+.footer ul li a{
+    font-size: 1.0rem;
+}
+.footer .footer-side{
+    margin-right: 1rem;
+}
+.footer-side select{
+    width: 100%;
+    max-width: 180px;
+    border-color: rgba(255, 255, 255, 0.7);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.0rem;
+    margin-right: 1.0rem;
+    background: var(--section-gap);
+}
+.footer-side select option{
+    color: #000;
+    font-size: 1.2rem;
+    background: #fff;
+}
+.footer-side p{
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.header-content .header-btn:hover,.header-form button:hover,.box-footer form button:hover{
+    background-color: var(--theme-hover-color);
+}
+
+
+/* Media Queries */
+@media screen and (max-width:960px) {
+    .header .header-image{  
+        max-width: 100px;
+    }
+    .header-home h1{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .header-home p{
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin: 2rem 0rem;
+    }
+    .header-home h3{
+        font-size: 1.0rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    section .header-form{
+        flex-wrap: nowrap;
+        width:100% ;
+    }
+    .header-form input{
+        width: 55%;
+    }
+    section .second-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .second-box .box1{
+        text-align: center;
+    }
+    .second-box .box2{
+        width: 100%;
+        max-width: 551px;
+        margin: 2.25rem 0;
+        position: relative;
+        z-index: 10;
+    }
+    .second-box .box1 h2,.third-box .box1 h2{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .second-box .box1 p,.third-box .box1 p{
+        font-size: 1.125rem;
+        margin-top: 1.5rem;
+        font-weight: 400;
+    }
+    .third-box{
+        flex-direction: column;
+    }
+    .third-box .box1{
+        width: 100%;
+        text-align: center;
+    }
+    .third-box .box2{
+        width: 100%;
+        max-width: 551px;
+    }
+    .third-box .box2.frame{
+        width: 100%;
+        max-width: 551px;
+    }
+    .third-box .box2.frame .download-icon{
+        width: 80%;
+        left: 10%;
+    }
+    .download-icon img{
+        width: 15%;
+    }
+    .box-footer button span{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .footer ul{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:599px) {
+    .header-content select{
+        margin-right: 0.5rem;
+        width: 10%;
+    }
+    .header .header-content{
+        margin-right: 0rem;
+        justify-content: end;
+    }
+    section .header-form{
+        flex-wrap: wrap;
+        width:100% ;
+        justify-content: center;
+    }
+    .header-form input{
+        width: 100%;
+    }
+    .header-form button{
+        margin: 1.0rem 0rem 0rem 0rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0.8rem  2rem;
+    }
+    .box-footer form input{
+        width: 90%;
+        max-width: 599px;
+    }
+    .box-footer form button{
+        margin-top: 1rem;
+        width: 75%;
+        max-width: 599px;
+        justify-content: center;
+    }
+}
